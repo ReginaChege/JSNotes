@@ -1,0 +1,22 @@
+let num=[3,6,8,25,7,5,7];
+
+console.log(num.length);
+
+let multiplies=num.map(item=>item*2);
+console.log(multiplies)
+
+// let triple=num.forEach(item=>
+//     item*2)
+// console.log()
+
+let triple=[]
+num.forEach(item=>{
+    triple.push(item*2)
+})
+console.log({triple})
+
+let less=num.filter(item=>item<10);
+console.log({less});
+
+let getsSeven=num.find(item=>item==7)
+console.log(getsSeven);
